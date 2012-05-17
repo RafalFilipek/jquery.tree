@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>jQuery Tree Test Suite</title>
+  <!-- Load local jQuery, removing access to $ (use jQuery, not $). -->
+  <script src="../libs/jquery/jquery.js"></script>
+  <script>jQuery.noConflict()</script>
+  <!-- Load local QUnit (grunt requires v1.0.0 or newer). -->
+  <link rel="stylesheet" href="../libs/qunit/qunit.css" media="screen">
+  <script src="../libs/qunit/qunit.js"></script>
+  <!-- Load local lib and tests. -->
+  <script src="../src/jquery.tree.js"></script>
+  <script src="jquery.tree_test.js"></script>
+</head>
+<body>
+  <h1 id="qunit-header">jQuery Tree Test Suite</h1>
+  <h2 id="qunit-banner"></h2>
+  <div id="qunit-testrunner-toolbar"></div>
+  <h2 id="qunit-userAgent"></h2>
+  <ol id="qunit-tests"></ol>
+  <div id="qunit-fixture">
+    <ul id="tree-1" class="tree">
+      <li>Folder1
+        <ul>
+          <li>Folder1.1</li>
+          <li>Folder1.2</li>
+        </ul>
+      </li>
+    </ul>
+    <ul id="tree-2" class="tree">
+      <li>Folder1
+        <ul>
+          <li>Folder1.1</li>
+          <li>Folder1.2</li>
+        </ul>
+      </li>
+      <li>Folder2
+        <ul>
+          <li>Folder2.1</li>
+          <li>Folder2.2</li>
+        </ul>
+      </li>
+    </ul>
+    <ul id="tree-3" class="tree">
+      <li>Folder1
+        <ul>
+          <li>Folder1.1
+            <ul class="open">
+              <li>Folder1.1.1</li>
+              <li>Folder1.1.2</li>
+            </ul>
+          </li>
+          <li>Folder1.2</li>
+        </ul>
+      </li>
+      <li>Folder2
+        <ul>
+          <li>Folder2.1
+            <ul>
+              <li class="open">Folder2.1.1</li>
+              <li>Folder2.1.2</li>
+            </ul>
+          </li>
+          <li>Folder2.2</li>
+        </ul>
+      </li>
+    </ul>
+    <ul id="tree-4" class="tree">
+      <li>
+        <span class="switch"></span>Folder1
+        <ul>
+          <li>Folder1.1</li>
+          <li>Folder1.2</li>
+        </ul>
+      </li>
+    </ul>
+    <ul id="tree-5" class="tree">
+      <li>
+        <span class="switch"></span>Folder1 <a class="add" href="#">(add)</a>
+        <ul>
+          <li>Folder1.1</li>
+          <li>Folder1.2</li>
+        </ul>
+      </li>
+    </ul>
+    <ul id="tree-6" class="tree">
+      <li>Folder1
+        <ul>
+          <li>Folder1.1</li>
+          <li>Folder1.2</li>
+        </ul>
+      </li>
+      <li>
+        Folder2
+        <ul>
+          <li>Folder2.1</li>
+          <li>Folder2.2</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
