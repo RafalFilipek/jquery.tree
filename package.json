@@ -3,22 +3,22 @@
   "title": "jQuery Tree",
   "description": "Tree plugin for jQuery",
   "version": "0.1.0",
-  "homepage": "https://github.com/RafalFilipek/jQueryTree",
+  "homepage": "https://github.com/RafalFilipek/jquery.tree",
   "author": {
     "name": "Rafał Filipek",
     "email": "rafal.filipek@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/RafalFilipek/jQueryTree.git"
+    "url": "git://github.com/RafalFilipek/jquery.tree.git"
   },
   "bugs": {
-    "url": "https://github.com/RafalFilipek/jQueryTree/issues"
+    "url": "https://github.com/RafalFilipek/jquery.tree/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/RafalFilipek/jQueryTree/blob/master/LICENSE-MIT"
+      "url": "https://github.com/RafalFilipek/jquery.tree/blob/master/LICENSE-MIT"
     }
   ],
   "dependencies": {
