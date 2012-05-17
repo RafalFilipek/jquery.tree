@@ -11,7 +11,7 @@ Download the [production version][min] or the [development version][max].
 In your web page:
 
 ```html
-<ul>
+<ul id="tree">
   <li>
     <span class="switch">+</span>Folder1
     <ul>
@@ -73,8 +73,13 @@ $('#tree').tree({
 });
 ```
 
+- - -
+
+By default its up to you to if you want to create switch element or not.
+Also in this example,  `li` element with `open` class will by visibile by default.
+
 ```html
-<ul>
+<ul id="tree">
   <li>
     <span class="switch">+</span>Folder1
     <ul>
