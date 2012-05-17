@@ -42,7 +42,7 @@ However you still have some configuration options:
  * `branch` : By default, `ul` element inside `root` node.
  * `node` : By default, `li` element.
  * `branch_class` : This class will be added to node elements that contains another branch.
- * `auto_switch_add` : Default `false`. You can specify this option as a function. That returns jQuery object witch will be prepended into all node elements that contains another branch.
+ * `auto_switch_add` : Default `false`. You can specify this option as a function that returns jQuery object witch will be prepended into all node elements that contains another branch.
  * `switch` : By default, `.switch`. This selector defines element which will toggle subbranch for specified node. If your're using `auto_switch_add` option remember to add this class to element.
  * `auto_open_class`: By default, `open`. If you will add this class to any node or branch it will be visible after initialization.
  * `events` : By default its a `{}` ( empty object ). Here you can specify all events for any element of your tree. Each key defines events names and selectors. Values are a functions that will be executed. You can find some examples in _Examples_ section.
