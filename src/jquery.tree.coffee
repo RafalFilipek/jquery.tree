@@ -1,5 +1,5 @@
 # jquery.tree
-# https://github.com/RafalFilipek/jQueryTree
+# https://github.com/RafalFilipek/jquery.tree
 #
 # Copyright (c) 2012 Rafał Filipek
 # Licensed under the MIT license.
