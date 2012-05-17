@@ -45,7 +45,7 @@ However you still have some configuration options:
  * `auto_switch_add` : Default `false`. You can specify this option as a function. That returns jQuery object witch will be prepended into all node elements that contains another branch.
  * `switch` : By default, `.switch`. This selector defines element which will toggle subbranch for specified node. If your're using `auto_switch_add` option remember to add this class to element.
  * `auto_open_class`: By default, `open`. If you will add this class to any node or branch it will be visible after initialization.
- * `events` : By default its a `{}` ( empty object ). Here you can specify all events for any element of your tree. Keys defiens events names and selected and values is a function that will be executed. You can find some examples in _Examples_ section.
+ * `events` : By default its a `{}` ( empty object ). Here you can specify all events for any element of your tree. Each key defines events names and selectors. Values are a functions that will be executed. You can find some examples in _Examples_ section.
 
 ## Examples
 
