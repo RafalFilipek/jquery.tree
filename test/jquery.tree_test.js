@@ -60,7 +60,6 @@
     $('#tree-7').tree()
     state = false
     $('#tree-7 li.branch').on('tree.branch_toggle', function(e,data){
-      console.log(data);
       state = data.visible;
     });
     $('#tree-7 .switch').click()
