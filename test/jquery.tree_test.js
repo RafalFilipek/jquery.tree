@@ -56,4 +56,15 @@
     equal(switchElement.parents('li').children('ul').is(':visible'), true, 'attached switch should execute branch toggle');
   });
 
+  test('tree.branch_toggle event should be triggered', function(){
+    $('#tree-7').tree()
+    state = false
+    $('#tree-7 li.branch').on('tree.branch_toggle', function(e,data){
+      console.log(data);
+      state = data.visible;
+    });
+    $('#tree-7 .switch').click()
+    equal(state, true, 'state for clicked branch should be true');
+  });
+
 }(jQuery));
