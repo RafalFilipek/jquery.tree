@@ -37,6 +37,7 @@
 				node = $(@).closest(options.node)
 				subtree = node.children('ul')
 				subtree.toggle() if subtree.size() is 1
+				node.trigger('tree.branch_toggle', {'visible':subtree.is(':visible')})
 			)
 
 			$.each(options.events, (def, fnc)->

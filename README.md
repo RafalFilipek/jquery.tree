@@ -95,6 +95,36 @@ Also in this example,  `li` element with `open` class will by visibile by defaul
 </ul>
 ```
 
+There is also one event which is triggerd when `switch` element is clicked. For example
+
+```
+<ul id="tree">
+  <li>
+    <span class="switch">+</span>Folder1
+    <ul>
+      <li><span class="switch">+</span>Folder1.1
+        <ul>
+          <li class="open">Folder1.1.1</li>
+        </ul>
+      </li>
+      <li>Folder1.2</li>
+    </ul>
+  </li>
+</ul>
+<script src="jquery.js"></script>
+<script src="dist/jquery.tree.min.js"></script>
+<script>
+jQuery(function($) {
+  $('#tree').tree()
+  $('li.branch').on('tree.branch_toggle', function(event, data){
+    console.log(event, data);
+  })
+});
+</script>
+```
+
+`data` object contains one key `visible` which is current state of specified branch.
+
 You can also look for some examples in `test/jquery.tree_test.js` file.
 
 ## Contributing
