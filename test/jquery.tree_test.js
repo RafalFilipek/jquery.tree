@@ -48,7 +48,7 @@
 
   test('if set switch elements should be attached', function(){
     $('#tree-6').tree({
-      'auto_switch_add': function(){ return $('<i>').addClass('switch'); }
+      'auto_switch_add': function(node){ return node.prepend($('<i>').addClass('switch')); }
     });
     equal($('#tree-6 .switch').size(), 2, 'switch elements are attached to branches');
     var switchElement = $('#tree-6 .switch:first');
